@@ -11,12 +11,18 @@
         margin: 5px;
     }
 
+
     body {
         /* border: 1px solid; */
         display: absolute;
     }
 
-    body>h1 {
+    body>a {
+        text-decoration-line: none;
+        color: black;
+    }
+
+    body>a>h1 {
         /*게시판*/
         height: 50px;
         /* border: 0px solid black; */
@@ -87,7 +93,7 @@
         /*뒤로가기 버튼*/
         width: 80px;
         height: 50px;
-        cursor:pointer;
+        /* cursor:pointer; */
     }
 
     .back:hover{
@@ -96,7 +102,7 @@
 </style>
 
 <body>
-    <h1>"이름을 뭘로하지" 게시판</h1>
+    <a href="index.html"><h1>"이름을 뭘로하지" 게시판</h1></a>
     <div class="subtitle"><h4>내가 쓴 글</h4></div>
     <div class="top"></div>
     <article>

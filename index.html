@@ -37,6 +37,7 @@
         }
         
     </style>
+>
 </head>
 
 <body>
@@ -47,31 +48,29 @@
         </a>
 
         <div>
-            <label for="" style="font-weight: bold;">ID</label>
+            <label for="" style="font-weight: bold;">전체게시물</label>
             <div>
-                <input type="text" placeholder="ID" style="font-size: 25px ;font-weight: bold;;" class="form-control" />
             </div>
         </div>
 
         <div>
-            <label for="" style="font-weight: bold;">Password </label>
+            <label for="" style="font-weight: bold;">인기게시물 </label>
             <div>
-                <input type="password" placeholder="Password" style="font-size: 20px; font-weight: bold;" class="form-control">
             </div>
         </div>
-    
-        <div>    
-            <input type="button" value="돌아가기" class="btn btn-primary mt-4" onclick="location.href='index.html'"
+
+        <div>
+            <input type="button" value="글작성" class="btn btn-primary mt-4" onclick="location.href='메인화면-글작성.html'"
                 style="float:right;background-color: black; border-color: black; "  />
         </div>
         <div>
-           <input type="submit" value="로그인" class="btn btn-primary mt-4"
+           <input type="button" value="내가쓴글" class="btn btn-primary mt-4" onclick="location.href='메인화면-내가쓴글조회목록.html'"
                 style="float:right; margin-right: 10px; background-color: black; border-color: black;" />
-               
-               
+           
         </div>
-        <label for="" style="font-size: 15px;margin-left: 350px; ">관리자</label>
-        <input type="checkbox" style="margin-left: 400px; ">
+        <input type="button" value="회원관리" class="btn btn-primary mt-4" onclick="location.href='관리자-회원관리.html'"
+        style="float:right; margin-right: 10px; background-color: black; border-color: black;" />
+   
     </form>
 
 </body>
