@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 5px;
+    }
+    a{
+        text-decoration-line:none; color: black;
+    }
+
+    body {
+        /* border: 1px solid; */
+        display: absolute;
+    }
+
+    body>a>h1 {
+        /*게시판*/
+        height: 50px;
+        border: 1px solid black;
+        text-align: center;
+        line-height: 50px;
+        font-size: 2.5rem;
+        padding: 10px;
+        background-color: lightgray;
+    }
+
+    body>section {
+        height: 700px;
+        border: 1px solid;
+    }
+
+    body>section>thead {
+        width: 100%;
+        height: 600px;
+        text-align: center;
+        line-height: 600px;
+    }
+
+    body>.back {
+        /*뒤로가기 버튼*/
+        width: 80px;
+        height:50px
+    }
+    body>section>table{
+        border-collapse: collapse;
+        border-spacing: 0;
+        margin-left: auto;
+      margin-right: auto;
+    }
+    section>table>thead>tr{
+        background-color: lightgrey;
+
+    }
+    section>table>thead>tr>th{
+        height:37px;
+        border:1px solid;
+        vertical-align: middle;
+        text-align: center;
+    }
+    section>table>tbody>tr{
+    }
+    section>table>tbody>tr>td{
+        height:25px;
+        text-align: center;
+        border:1px solid;
+    }
+</style>
+
+<body>
+    <a href="메인화면.html"><h1>나의 게시물</h1></a>
+
+    <section>
+        <table>
+            <!-- <caption>내가 쓴 글 목록</caption> -->
+            <colgroup>
+                <col style="width:3%">
+                <col style="width:45%">
+                <col style="width:7%">
+                <col style="width:10%">
+                <col style="width:5%">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>제목</th>
+                    <th>글쓴이</th>
+                    <th>작성날짜</th>
+                    <th>조회</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>공지사항</td>
+                    <td>관리자</td>
+                    <td>2023.07.14</td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <a href="메인화면.html"><button class="back">뒤로가기</button></a>
+</body>
+
+</html>
